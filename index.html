@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoApp</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 0;
+        }
+
+        * {
+            font-family: "Montserrat", sans-serif;
+            font-optical-sizing: auto;
+        }
+
+        .content {
+            padding: 10px;
+            color: #fff;
+            text-shadow: 2px 4px 8px black;
+            text-align: center;
+            background-color: #3b3b4f;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .third-sec {
+            margin-top: -25px;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(60, 236, 74, 1) 50%, rgba(59, 79, 66, 1) 100%);
+            height: 100%;
+        }
+
+        .by {
+            font-weight: 700;
+        }
+
+        .Photo {
+            margin-bottom: -5px;
+        }
+
+        .images {
+            background: linear-gradient(90deg, rgba(0, 36, 34, 1) 0%, rgba(9, 83, 121, 1) 50%, rgba(7, 194, 232, 1) 100%);
+            width: 100%;
+            padding: 40px 0;
+        }
+
+        .image {
+            width: 100%;
+            display: block;
+            margin: auto;
+            max-width: 600px;
+        }
+
+        .images2 {
+            width: 100%;
+            margin-bottom: -20px;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .images3 {
+            width: 100%;
+            margin-bottom: -20px;
+            padding: 10px;
+            height: 300px;
+        }
+
+        .latest {
+            text-align: center;
+            color: white;
+            text-shadow: 2px 4px 8px black;
+            flex-basis: 100%;
+            margin-bottom: 20px;
+        }
+
+        .title-movie {
+            color: white;
+            text-shadow: 2px 4px 8px black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .div2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(121, 9, 13, 1) 50%, rgba(59, 59, 79, 1) 100%);
+        }
+
+        .div3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .image2 {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .images2 {
+            height: 300px;
+            border-radius: 20px;
+            background: white;
+            box-shadow: 1px 4px 8px black;
+        }
+
+        .movie {
+            text-align: center;
+        }
+
+        .mcu {
+            text-align: center;
+            color: #fff;
+            text-shadow: 2px 4px 8px black;
+        }
+
+        video {
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            height: 190px;
+        }
+
+        .treetitle {
+            color: #fff;
+            text-shadow: 2px 4px 8px black;
+            text-align: center;
+            font-size: 30px;
+            padding-top: 30px;
+            margin-bottom: -10px;
+        }
+
+        .fourtitle{
+            color: #fff;
+            text-shadow: 2px 4px 8px black;
+            text-align: center;
+        }
+
+        .Phase{
+            color: #fff;
+            text-shadow: 2px 4px 8px black;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .images {
+                padding: 20px 0;
+            }
+
+            .div2 {
+                padding: 10px;
+            }
+
+            .image2 {
+                width: 100%;
+                max-width: 200px;
+            }
+
+            .latest {
+                font-size: 1.2rem;
+            }
+
+            .title-movie {
+                font-size: 1rem;
+            }
+
+            video {
+                max-width: 300px;
+                height: 168;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .content {
+                padding: 5px;
+            }
+
+            .images {
+                padding: 10px 0;
+            }
+
+            .image {
+                max-width: 100%;
+            }
+
+            .image2 {
+                width: 100%;
+                max-width: 150px;
+            }
+
+            .latest {
+                font-size: 1rem;
+            }
+
+            .title-movie {
+                font-size: 0.8rem;
+            }
+
+            video {
+                max-width: 200px;  
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <h1 class="Photo">MCU PHOTOS</h1>
+        <p class="photo-par"><b>Movies</b></p>
+        <p class="by">Made By: Christian Renz Ledesma</p>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div class="images">
+        <h1 class="mcu">Marvel Cinematic Universe</h1>
+        <img src="asset/MCU.png" class="image" alt="image">
+    </div>
+    <div class="div2">
+        <h1 class="latest">Upcoming Movie/TV Show</h1>
+        <div class="image2">
+            <div class="movie">
+                <video controls poster="asset/Deadpool3.png">
+                    <source src="asset/deadpool3.mp4" type="video/mp4">
+                </video>
+                <p class="title-movie">Deadpool & Wolverine<br><span>This July 24, in PHILIPPINES</span></p>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="movie">
+                <video controls poster="asset/Agatha.png">
+                    <source src="asset/Agathatrailer.mp4" type="video/mp4">
+                </video>
+                <p class="title-movie">Agatha All Along<br><span>This September 18, only on Disney+</span></p>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="movie">
+                <video controls poster="asset/captainnewworld.png">
+                    <source src="asset/Captainamericanewworld.mp4" type="video/mp4">
+                </video>
+                <p class="title-movie">Captain America Brave New World<br><span>This February 14, 2025</span></p>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="movie">
+                <video controls poster="asset/venomthelastdance.webp">
+                    <source src="asset/Venomlastdance.mp4" type="video/mp4">
+                </video>
+                <p class="title-movie">Venom: The Last Dance<br><span>This October 25, 2024 in theater</span></p>
+            </div>
+        </div>
+    </div>
+
+    <section class="third-sec">
+        <div class="treesec">
+            <h1 class="treetitle">Timeline Order MCU</h1>
+            <h4 class="fourtitle">MARVEL MOVIES IN CHRONOLOGICAL ORDER</h4>
+            <h1 class="Phase">Phase 1</h1>
+            <div class="div3">
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-iron-man-hd-19680/1064151"><img src="asset/ironman1.png" class="images2" alt="images"></a>
+                        <p class="title-movie">Iron Man (May 2008)</p>
+                    </div>
+                </div>
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-the-incredible-hulk-hd-19338/1064241"><img src="asset/hulk1.webp" class="images2" alt="images"></a>
+                        <p class="title-movie">The Incredible Hulk (June 2008)</p>
+                    </div>
+                </div>
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-iron-man-2-hd-19665/1064074"><img src="asset/ironman2.png" class="images2" alt="images"></a>
+                        <p class="title-movie">Iron Man 2 (April 2010)</p>
+                    </div>
+                </div>
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-thor-hd-19731/1064042"><img src="asset/thor1.jpg" class="images2" alt="images"></a>
+                        <p class="title-movie">Thor (April 2011)</p>
+                    </div>
+                </div>
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-captain-america-the-first-avenger-hd-19108/934327"><img src="asset/Captainamerica1.jpg" class="images2" alt="images"></a>
+                        <p class="title-movie">Captain America: The First Avenger (July 2011)</p>
+                    </div>
+                </div>
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/movie/watch-the-avengers-hd-19782"><img src="asset/TheAvenger.jpg" class="images2" alt="images"></a>
+                        <p class="title-movie">The Avengers (April 2012)</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="Phase">Phase 2</h1>
+            <div class="div3">
+                <div class="image2">
+                    <div class="movie">
+                        <a href="https://bingewatch.to/watch-movie/watch-iron-man-3-hd-19562/934065"><img src="asset/ironman3.png" class="images2" alt="images"></a>
+                        <p class="title-movie">Iron Man 3 (April 2013)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <h1 style="font-size: 50px; text-align: center;">Under Dev Currently Working</h1>
+    </section>
+</body>
+
+</html>
